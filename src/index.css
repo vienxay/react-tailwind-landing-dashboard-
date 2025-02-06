@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: 'Inter', 'Phetsarath', sans-serif;
+}
+
+ /* custom variant for dark mode */
+ @custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+    html, body {
+        @apply bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-100;
+        font-family: 'Inter', 'Phetsarath', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
